@@ -1,85 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <!-- Style CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
-    <title>Istvan's Portfolio</title>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <body>
-    <section class="s1">
-      <div class="main-container">
-        <div class="greetings">
-          <h1>
-            Hello There , I am
-            <!--<span id="text"></span>
-          <div class="console-underscore" id="console">&#95;</div> -->`
-          </h1>
+  <title>Istvan's Portfolio</title>
+</head>
+
+<body>
+  <section class="s1">
+    <div class="main-container">
+      <div class="greetings">
+        <h1>
+          Hello There , I am
+          <!--<span id="text"></span>
+          <div class="console-underscore" id="console">&#95;</div> -->
+        </h1>
+        <div id="theme-options-wrapper">
+          <div id="light-mode" class="theme-dot"></div>
+          <div id="solar-mode" class="theme-dot"></div>
+          <div id="green-mode" class="theme-dot"></div>
+          <div id="dark-mode" class="theme-dot"></div>
         </div>
-        <div class="hero-wrapper">
-          <div class="nav-wrapper">
-            <ul id="navigation">
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Portfolio</a></li>
-            </ul>
-            <div class="dots-wrapper">
-              <div id="dot5" class="browser-square">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </div>
-              <div id="dot4" class="browser-square">
-                <i class="fa fa-list" aria-hidden="true"></i>
-              </div>
-              <div id="dot3" class="browser-dot">
-                <i class="fa fa-window-minimize" aria-hidden="true"></i>
-              </div>
-              <div id="dot2" class="browser-dot">
-                <i class="fa fa-window-maximize" aria-hidden="true"></i>
-              </div>
-              <div id="dot1" class="browser-dot">
-                <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <div class="hero-wrapper">
+        <div class="nav-wrapper">
+          <ul id="navigation">
+            <li><a href="#">More</a></li>
+          </ul>
+          <div class="dots-wrapper">
+            <div id="dot5" class="browser-square">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div id="dot4" class="browser-square">
+              <i class="fa fa-list" aria-hidden="true"></i>
+            </div>
+            <div id="dot3" class="browser-dot">
+              <i class="fa fa-window-minimize" aria-hidden="true"></i>
+            </div>
+            <div id="dot2" class="browser-dot">
+              <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            </div>
+            <div id="dot1" class="browser-dot">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-column">
+          <div class="left-container">
+            <div id="slideshow-example" data-component="slideshow">
+              <div role="list">
+                <div class="slide">
+                  <img id="hero-image" src="./assets/images/gingerbread_cada.png" alt="" />
+                </div>
+                <div class="slide">
+                  <img id="hero-image" src="./assets/images/space man.jpg" alt="" />
+                </div>
+                <div class="slide">
+                  <img id="hero-image" src="./assets/images/gingerbread_cada.png" alt="" />
+                </div>
+                <button id="button">Projects</button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="left-column">
-            
-            
-            <div id="theme-options-wrapper">
-                
-                  <div id='light-mode' class="theme-dot"></div>
-                  <div id='bright-mode' class="theme-dot"></div>
-                  <div id='dark-mode' class="theme-dot"></div>
-                  <div id='solar-mode' class="theme-dot"></div>
-                  
-              </div>
-              <img src="./assets/images/space man.jpg" id="hero-image"></img>
-
+        <div class="right-column">
+          <div class="right-container">
+            <div class="preview">
+              <h3>Who am I...</h3>
+              <p>
+                I am a IT student with a lot of passion for computing and
+                programming, looking forward to always learn more and improve
+                myself !
+              </p>
+            </div>
           </div>
-          <div class="right-column">right</div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="s2">
-      <div class="main-container">About</div>
-    </section>
+  <section class="s2">
+    <div class="main-container">
+      <div class="about-wrapper">
+        <div class="about-me">
+          <h4>More about me</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <hr>
+          <h4>Skills</h4>
+          <p>Fullstack developer with primary expertise on Django + Flutter. (<a target="_blank"
+              href="/resume.pdf">Download Resume</a>)</p>
+          <div class="skills">
+            <ul>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Flutter</li>
+              <li>HTML/CSS/JS</li>
+              <li>Networking</li>
+              <li>
+                Bug Bounty Hunter</li>
+              <li>Python</li>
+            </ul>
+            <ul>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Flutter</li>
+              <li>HTML/CSS/JS</li>
+              <li>Networking</li>
+              <li>
+                Bug Bounty Hunter</li>
+              <li>Python</li>
+              
+            </ul>
+            <p>and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+  </section>
 
-    <section class="s1">
-      <div class="main-container">Portfolio</div>
-    </section>
+  <section class="s1">
+    <div class="main-container">Portfolio</div>
+  </section>
 
-    <section class="s2">
-      <div class="main-container">Contact</div>
-    </section>
-  </body>
-  <script src="/assets/js/animation.js"></script>
+  <section class="s2">
+    <div class="main-container">Contact</div>
+  </section>
+</body>
+<script src="/assets/js/animation.js"></script>
+
 </html>

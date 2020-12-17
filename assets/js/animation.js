@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Istvan Feher.', 'a Django Programmer', 'a Flutter Programmer','IT Student', 'Passionate Student'], 'text',[]);
+consoleText(['Istvan Feher.', 'a Django Programmer.', 'a Flutter Programmer.','IT Student.', 'Passionate Student.'], 'text',[]);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -9,7 +9,7 @@ function consoleText(words, id, colors) {
   var x = 1;
   var waiting = false;
   var target = document.getElementById(id)
-  target.setAttribute('style', 'color:' + colors[0])
+ 
   window.setInterval(function() {
 
     if (letterCount === 0 && waiting === false) {
@@ -21,7 +21,7 @@ function consoleText(words, id, colors) {
         var usedWord = words.shift();
         words.push(usedWord);
         x = 1;
-        target.setAttribute('style', 'color:' + colors[0])
+       
         letterCount += x;
         waiting = false;
       }, 1000)
@@ -49,3 +49,37 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
+
+//slideshow
+
+
+var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+  
+// Apply to all slideshows that you define with the markup wrote
+slideshows.forEach(initSlideShow);
+
+function initSlideShow(slideshow) {
+
+  var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+
+  var index = 0, time = 2000;
+  slides[index].classList.add('active');  
+  
+  setInterval( () => {
+    slides[index].classList.remove('active');
+    
+    //Go over each slide incrementing the index
+    index++;
+    
+    // If you go over all slides, restart the index to show the first slide and start again
+    if (index === slides.length) index = 0; 
+    
+    slides[index].classList.add('active');
+
+  }, time);
+}
+
+// buttons
+
+
