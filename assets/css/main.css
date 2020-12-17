@@ -6,6 +6,8 @@
 
   --mainText: #eeeae5;
   --secondaryText: #4b5156;
+
+  --themeDotBorder: #2c001e
 }
 
 html,
@@ -164,9 +166,34 @@ textarea {
 
 #hero-image {
   display: block;
-  margin: 0 auto;
+  margin: 10px 0px 0 10px;
+  float: left;
   height: 200px;
   width: 200px;
   object-fit: cover;
   border: 2px solid var(--borderColor);
+}
+
+#theme-options-wrapper {
+  display: flex; 
+ 
+  
+  
+ 
+}
+
+.theme-dot{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: solid 1px var(--themeDotBorder);
+  margin: 5px;
+  -webkit-box-shadow: -4px 4px 1px 0px rgba(122, 135, 123, 0.71);
+  box-shadow: -4px 4px 1px 0px rgba(122, 135, 123, 0.71);
+  margin-bottom: 3%;
+cursor: pointer;
+}
+
+#settings-note{
+  color: var(--themeDotBorder);
 }
