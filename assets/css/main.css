@@ -1,0 +1,172 @@
+:root {
+  --mainColor: #2c001e;
+  --secondaryColor: #fff;
+
+  --borderColor: #c1c1c1;
+
+  --mainText: #eeeae5;
+  --secondaryText: #4b5156;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 strong {
+  color: var(--mainText);
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: var(--mainText);
+  font-family: "Black Han Sans", monospace;
+}
+
+.s1 {
+  background-color: var(--mainColor);
+  color: var(--mainText);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
+
+.s2 {
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
+.greetings {
+  text-align: center;
+  align-content: center;
+  display: grid;
+
+  min-height: 10em;
+}
+
+.hero-wrapper {
+  border-radius: 5px 5px 5px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3em 30em;
+  grid-template-areas:
+    "nav-wrapper nav-wrapper"
+    "left-column right-column";
+  background-color: var(--secondaryColor);
+  color: var(--mainColor);
+  -webkit-box-shadow: -4px 4px 1px 0px rgba(122, 135, 123, 0.71);
+  box-shadow: -4px 4px 1px 0px rgba(122, 135, 123, 0.71);
+  margin-bottom: 3%;
+}
+
+.nav-wrapper {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: nav-wrapper;
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.dots-wrapper {
+  display: flex;
+  padding: 10px;
+}
+
+#navigation {
+  margin: 0;
+  padding: 10px;
+}
+
+#navigation li {
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.browser-dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+.browser-square {
+  border-radius: 2px;
+  background-color: rgb(97, 97, 97);
+  height: 23px;
+  width: 23px;
+  margin: 5px;
+}
+
+.fa {
+  color: rgb(221, 215, 215);
+  margin-left: 4px;
+  margin-top: 3px;
+}
+
+.right-column {
+  grid-area: right-column;
+}
+
+.left-column {
+  grid-area: left-column;
+}
+
+#hero-image {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border: 2px solid var(--borderColor);
+}
