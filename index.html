@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Style CSS -->
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  <link   rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link id='theme-style' rel="stylesheet" type="text/css" href="">
 
   <title>Istvan's Portfolio</title>
 </head>
@@ -16,6 +18,7 @@
 <body>
   <section class="s1">
     <div class="main-container">
+      
       <div class="greetings">
         <h1>
           Hello There , I am
@@ -23,10 +26,12 @@
           <div class="console-underscore" id="console">&#95;</div> 
         </h1>
         <div id="theme-options-wrapper">
-          <div id="light-mode" class="theme-dot"></div>
-          <div id="solar-mode" class="theme-dot"></div>
-          <div id="green-mode" class="theme-dot"></div>
-          <div id="dark-mode" class="theme-dot"></div>
+          <div data-mode="light" id="light-mode" class="theme-dot"></div>
+          <div  data-mode="solar" id="solar-mode" class="theme-dot"></div>
+          <div  data-mode="green" id="green-mode" class="theme-dot"></div>
+          <div  data-mode="red" id="red-mode" class="theme-dot"></div>
+          <div  data-mode="dark" id="dark-mode" class="theme-dot"></div>
+       
         </div>
       </div>
       <div class="hero-wrapper">
@@ -103,6 +108,7 @@
     <div class="main-container">
       <div class="about-wrapper">
         <div class="about-me">
+          
           <h4>More about me</h4>
 
 					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
@@ -140,7 +146,7 @@
           </div>
         </div>
         
-				<div id= 'projects'class="social-links">
+				<div id='projects'class="social-links">
 
           <h4>My Blogs...</h4>
           <img id="social_img" src="./assets/images/blog1.png">
@@ -157,49 +163,69 @@
   </section>
 
   <section class="s1">
-    <div class="main-container">Portfolio</div>
+    <div class="main-container">
+      <div class="main-container">
+        <h3 style="text-align:center;">My FullStack Projects</h3>
+        <div class="post-wrapper">
+          <div class="post">
+            <img class="thumbnail" src="./assets/images/blog1.png">
+            <div class="post-preview">
+              <h6 class="post-title">BookED</h6>
+              <p class="post-intro">Is one of my biggest projects ever created, it is a open platform for students and teachers wishing to sell their old books. Using Django Restful API and Flutter.</p>
+            </div>
+            <a href="projects.html" class="button-post">Read More</a>
+          </div>
+          <div class="post">
+            <img class="thumbnail" src="./assets/images/porto_canada.png">
+            <div class="post-preview">
+              <h6 class="post-title">PortoCanada</h6>
+              <p class="post-intro">Porto Canada came from the idea of keeping people that speak portuguese more connected to each other.</p>
+             
+            </div>
+            <a href="/projects" class="button-post">Read More</a>
+          </div>
+            <div class="post">
+              <img class="thumbnail" src="./assets/images/bolo_de_fada.png">
+              <div class="post-preview">
+                <h6 class="post-title">Bolo de Fada</h6>
+                <p class="post-intro">It is a bakery catalog displaying all products available for sale.</p>
+              </div>
+              <a href="/projects" class="button-post">Read More</a>
+            </div>
+              <div class="post">
+                <img class="thumbnail" src="./assets/images/blog1.png">
+                <div class="post-preview">
+                  <h6 class="post-title">Beyond Lines</h6>
+                  <p class="post-intro">This is a project that I have called beyondlines in which shows my passion about graphic design and computing</p>
+                 
+                </div>
+                <a href="/projects" class="button-post">Read More</a>
+              </div>
+              <div class="post">
+                <img class="thumbnail" src="./assets/images/blog2.png">
+                <div class="post-preview">
+                  <h6 class="post-title">Neted</h6>
+                  <p class="post-intro">This is a project that I have called neted I try to teach other about a huge subject in the computer science field which is computer networking</p>
+                 
+                </div>
+                <a href="/projects" class="button-post">Read More</a>
+              </div>
+              
+
+    </div>
   </section>
 
   <section class="s2">
-    <div class="main-container">Contact</div>
+    <div class="main-container">
+      <div class="form-container">
+        <h3>Interested ? Get in touch !</h3>
+        <div class="form">
+          <script type="text/javascript" src="https://form.jotform.com/jsform/203516706962054"></script>
+        </div>
+      </div>
+    </div>
   </section>
+  
 </body>
 <script src="./assets/js/animation.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>// Select all links with hashes
-  $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-      ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-          // Only prevent default if animation is actually gonna happen
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            };
-          });
-        }
-      }
-    });</script>
 </html>
