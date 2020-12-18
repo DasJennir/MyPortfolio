@@ -19,8 +19,8 @@
       <div class="greetings">
         <h1>
           Hello There , I am
-          <!--<span id="text"></span>
-          <div class="console-underscore" id="console">&#95;</div> -->
+          <span id="text"></span>
+          <div class="console-underscore" id="console">&#95;</div> 
         </h1>
         <div id="theme-options-wrapper">
           <div id="light-mode" class="theme-dot"></div>
@@ -32,7 +32,7 @@
       <div class="hero-wrapper">
         <div class="nav-wrapper">
           <ul id="navigation">
-            <li><a href="#">More</a></li>
+            <li><a href="#" class="navigation-link">More...</a></li>
           </ul>
           <div class="dots-wrapper">
             <div id="dot5" class="browser-square">
@@ -55,32 +55,43 @@
 
         <div class="left-column">
           <div class="left-container">
-            <div id="slideshow-example" data-component="slideshow">
-              <div role="list">
-                <div class="slide">
-                  <img id="hero-image" src="./assets/images/gingerbread_cada.png" alt="" />
-                </div>
-                <div class="slide">
-                  <img id="hero-image" src="./assets/images/space man.jpg" alt="" />
-                </div>
-                <div class="slide">
-                  <img id="hero-image" src="./assets/images/gingerbread_cada.png" alt="" />
-                </div>
-                <button id="button">Projects</button>
+            <div class="card">
+  
+              <div class="card_part card_part-one">
               </div>
+              
+               <!-- Photo 2 -->
+              <div class="card_part card_part-two">
+            
+              </div>
+            
+              <!-- Photo 3 -->
+              <div class="card_part card_part-three">
+              </div>
+            
+              <!-- Photo 4 -->
+              <div class="card_part card_part-four">
+              </div>
+            
             </div>
+                <button  onclick="location.href='#projects'" id="button">Projects</button>
+            
           </div>
         </div>
 
         <div class="right-column">
           <div class="right-container">
             <div class="preview">
+              <div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
               <h3>Who am I...</h3>
               <p>
                 I am a IT student with a lot of passion for computing and
                 programming, looking forward to always learn more and improve
                 myself !
               </p>
+              <div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
             </div>
           </div>
         </div>
@@ -93,13 +104,16 @@
       <div class="about-wrapper">
         <div class="about-me">
           <h4>More about me</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+
+					<p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+
           <hr>
           <h4>Skills</h4>
           <p>Fullstack developer with primary expertise on Django + Flutter. (<a target="_blank"
-              href="/resume.pdf">Download Resume</a>)</p>
-          <div class="skills">
+              href="./resume.pdf">Download Resume</a>)</p>
+          <div id="skills">
             <ul>
               <li>Python</li>
               <li>Django</li>
@@ -121,11 +135,25 @@
               <li>Python</li>
               
             </ul>
-            <p>and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+           
+             
           </div>
         </div>
+        
+				<div id= 'projects'class="social-links">
+
+          <h4>My Blogs...</h4>
+          <img id="social_img" src="./assets/images/blog1.png">
+          <img id="social_img" src="./assets/images/blog2.png">
+        
+          <a target="_blank" class='button-social' href="https://www.beyondlines.net/">IT Blog</a>
+          <br>
+					<a target="_blank" class='button-social' href="http://www.neted.network/">Computer Networking Blog</a>
+				
+	
+				</div>
       </div>
+      
   </section>
 
   <section class="s1">
@@ -136,6 +164,42 @@
     <div class="main-container">Contact</div>
   </section>
 </body>
-<script src="/assets/js/animation.js"></script>
-
+<script src="./assets/js/animation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>// Select all links with hashes
+  $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+      // On-page links
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        && 
+        location.hostname == this.hostname
+      ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+          // Only prevent default if animation is actually gonna happen
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000, function() {
+            // Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) { // Checking if the target was focused
+              return false;
+            } else {
+              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+              $target.focus(); // Set focus again
+            };
+          });
+        }
+      }
+    });</script>
 </html>
