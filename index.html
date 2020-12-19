@@ -5,12 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Style CSS -->
-  <link   rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../MyPortfolio/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../MyPortfolio/assets/favicon.ico" type="image/x-icon">
 
+  <!-- Style CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  <link id='theme-style' rel="stylesheet" type="text/css" href="">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <link id='theme-style' rel="stylesheet" type="text/css" href="">
+
 
   <title>Istvan's Portfolio</title>
 </head>
@@ -18,42 +24,45 @@
 <body>
   <section class="s1">
     <div class="main-container">
-      
+
       <div class="greetings">
         <h1>
           Hello There , I am
           <span id="text"></span>
-          <div class="console-underscore" id="console">&#95;</div> 
+          <div class="console-underscore" id="console">&#95;</div>
         </h1>
+        <p>Select Theme...</p>
         <div id="theme-options-wrapper">
+
           <div data-mode="light" id="light-mode" class="theme-dot"></div>
-          <div  data-mode="solar" id="solar-mode" class="theme-dot"></div>
-          <div  data-mode="green" id="green-mode" class="theme-dot"></div>
-          <div  data-mode="red" id="red-mode" class="theme-dot"></div>
-          <div  data-mode="dark" id="dark-mode" class="theme-dot"></div>
-       
+          <div data-mode="solar" id="solar-mode" class="theme-dot"></div>
+          <div data-mode="green" id="green-mode" class="theme-dot"></div>
+          <div data-mode="red" id="red-mode" class="theme-dot"></div>
+          <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
+
         </div>
+
       </div>
       <div class="hero-wrapper">
         <div class="nav-wrapper">
           <ul id="navigation">
-            <li><a href="#" class="navigation-link">More...</a></li>
+            <li><a href="#projects" class="navigation-link">More...</a></li>
           </ul>
           <div class="dots-wrapper">
             <div id="dot5" class="browser-square">
-              <i class="fa fa-search" aria-hidden="true"></i>
+             <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/"> <i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
             <div id="dot4" class="browser-square">
-              <i class="fa fa-list" aria-hidden="true"></i>
+              <a target="_blank" href="https://github.com/indiafoxtrot"><i class="fa fa-list" aria-hidden="true"></i></a>
             </div>
             <div id="dot3" class="browser-dot">
-              <i class="fa fa-window-minimize" aria-hidden="true"></i>
+              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/">  <i class="fa fa-window-minimize" aria-hidden="true"></i></a>
             </div>
             <div id="dot2" class="browser-dot">
-              <i class="fa fa-window-maximize" aria-hidden="true"></i>
+              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/">  <i class="fa fa-window-maximize" aria-hidden="true"></i></a>
             </div>
             <div id="dot1" class="browser-dot">
-              <i class="fa fa-times" aria-hidden="true"></i>
+              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/">  <i class="fa fa-times" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -61,26 +70,26 @@
         <div class="left-column">
           <div class="left-container">
             <div class="card">
-  
+
               <div class="card_part card_part-one">
               </div>
-              
-               <!-- Photo 2 -->
+
+              <!-- Photo 2 -->
               <div class="card_part card_part-two">
-            
+
               </div>
-            
+
               <!-- Photo 3 -->
               <div class="card_part card_part-three">
               </div>
-            
+
               <!-- Photo 4 -->
               <div class="card_part card_part-four">
               </div>
-            
+
             </div>
-                <button  onclick="location.href='#projects'" id="button">Projects</button>
-            
+            <button onclick="location.href='#projects'" id="button">Projects</button>
+
           </div>
         </div>
 
@@ -88,7 +97,7 @@
           <div class="right-container">
             <div class="preview">
               <div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
+              <div id="corner-tr" class="corner"></div>
               <h3>Who am I...</h3>
               <p>
                 I am a IT student with a lot of passion for computing and
@@ -96,7 +105,7 @@
                 myself !
               </p>
               <div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
+              <div id="corner-tr" class="corner"></div>
             </div>
           </div>
         </div>
@@ -108,12 +117,13 @@
     <div class="main-container">
       <div class="about-wrapper">
         <div class="about-me">
-          
+
           <h4>More about me</h4>
 
-					<p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+          <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
 
-					<p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+          <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that
+            interest me.</p>
 
           <hr>
           <h4>Skills</h4>
@@ -131,88 +141,90 @@
               <li>Python</li>
             </ul>
             <ul>
-              <li>Python</li>
-              <li>Django</li>
-              <li>Flutter</li>
-              <li>HTML/CSS/JS</li>
-              <li>Networking</li>
-              <li>
-                Bug Bounty Hunter</li>
-              <li>Python</li>
-              
+              <li>Photoshop</li>
+              <li>Pentesting</li>
+              <li>Cybersecurity</li>
+
+
             </ul>
-           
-             
+
+
           </div>
         </div>
-        
-				<div id='projects'class="social-links">
+
+        <div class="social-links">
 
           <h4>My Blogs...</h4>
           <img id="social_img" src="./assets/images/blog1.png">
           <img id="social_img" src="./assets/images/blog2.png">
-        
+
           <a target="_blank" class='button-social' href="https://www.beyondlines.net/">IT Blog</a>
           <br>
-					<a target="_blank" class='button-social' href="http://www.neted.network/">Computer Networking Blog</a>
-				
-	
-				</div>
+          <a target="_blank" class='button-social' href="http://www.neted.network/">Computer Networking Blog</a>
+
+
+        </div>
       </div>
-      
+
   </section>
 
-  <section class="s1">
+  <section  id='projects' class="s1">
     <div class="main-container">
       <div class="main-container">
         <h3 style="text-align:center;">My FullStack Projects</h3>
         <div class="post-wrapper">
           <div class="post">
-            <img class="thumbnail" src="./assets/images/blog1.png">
+            <img class="thumbnail" src="./assets/images/booked1.png">
             <div class="post-preview">
               <h6 class="post-title">BookED</h6>
-              <p class="post-intro">Is one of my biggest projects ever created, it is a open platform for students and teachers wishing to sell their old books. Using Django Restful API and Flutter.</p>
+              <p class="post-intro">Is one of my biggest projects ever created, it is a open platform for students and
+                teachers wishing to sell their old books. Using Django Restful API and Flutter.</p>
             </div>
-            <a href="projects.html" class="button-post">Read More</a>
+            <a href="booked.html" class="button-post">Read More</a>
           </div>
           <div class="post">
             <img class="thumbnail" src="./assets/images/porto_canada.png">
             <div class="post-preview">
               <h6 class="post-title">PortoCanada</h6>
-              <p class="post-intro">Porto Canada came from the idea of keeping people that speak portuguese more connected to each other.</p>
-             
-            </div>
-            <a href="/projects" class="button-post">Read More</a>
-          </div>
-            <div class="post">
-              <img class="thumbnail" src="./assets/images/bolo_de_fada.png">
-              <div class="post-preview">
-                <h6 class="post-title">Bolo de Fada</h6>
-                <p class="post-intro">It is a bakery catalog displaying all products available for sale.</p>
-              </div>
-              <a href="/projects" class="button-post">Read More</a>
-            </div>
-              <div class="post">
-                <img class="thumbnail" src="./assets/images/blog1.png">
-                <div class="post-preview">
-                  <h6 class="post-title">Beyond Lines</h6>
-                  <p class="post-intro">This is a project that I have called beyondlines in which shows my passion about graphic design and computing</p>
-                 
-                </div>
-                <a href="/projects" class="button-post">Read More</a>
-              </div>
-              <div class="post">
-                <img class="thumbnail" src="./assets/images/blog2.png">
-                <div class="post-preview">
-                  <h6 class="post-title">Neted</h6>
-                  <p class="post-intro">This is a project that I have called neted I try to teach other about a huge subject in the computer science field which is computer networking</p>
-                 
-                </div>
-                <a href="/projects" class="button-post">Read More</a>
-              </div>
-              
+              <p class="post-intro">Porto Canada came from the idea of keeping people that speak portuguese more
+                connected to each other.I have mainly used Django to accomplish this project.</p>
 
-    </div>
+            </div>
+            <a href="porto_canada.html" class="button-post">Read More</a>
+          </div>
+          <div class="post">
+            <img class="thumbnail" src="./assets/images/bolo_de_fada.png">
+            <div class="post-preview">
+              <h6 class="post-title">Bolo de Fada</h6>
+              <p class="post-intro">This is a static website that display a catalog of a bakery showing all products
+                available for sale at the moment. I have used Hugo and Mailchimp to do this project.</p>
+            </div>
+            <a href="bolo_de_fada.html" class="button-post">Read More</a>
+          </div>
+          <div class="post">
+            <img class="thumbnail" src="./assets/images/blog1.png">
+            <div class="post-preview">
+              <h6 class="post-title">Beyond Lines</h6>
+              <p class="post-intro">This is a project that I have called beyondlines in which shows my passion about
+                graphic design and computing.This was my first ever project.</p>
+
+            </div>
+            <a href="beyond_lines.html" class="button-post">Read More</a>
+          </div>
+          <div class="post">
+            <img class="thumbnail" src="./assets/images/blog2.png">
+            <div class="post-preview">
+              <h6 class="post-title">Neted</h6>
+              <p class="post-intro">This is a project that I have called neted I try to teach other about a huge subject
+                in the computer science field which is computer networking</p>
+
+            </div>
+            <a href="neted.html" class="button-post">Read More</a>
+          </div>
+
+
+        </div>
+
   </section>
 
   <section class="s2">
@@ -221,11 +233,16 @@
         <h3>Interested ? Get in touch !</h3>
         <div class="form">
           <script type="text/javascript" src="https://form.jotform.com/jsform/203516706962054"></script>
+
         </div>
       </div>
     </div>
   </section>
-  
+
+  <footer class="footer">That is a open source resume feel free to copy and modify it as you wish.</footer>
+  <div class="background-color">.</div>
 </body>
+
 <script src="./assets/js/animation.js"></script>
+
 </html>

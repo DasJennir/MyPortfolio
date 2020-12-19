@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Istvan Feher.', 'a Django Programmer.', 'a Flutter Programmer.','IT Student.', 'Passionate Student.'], 'text',[]);
+consoleText(['Istvan Feher.', 'a Django Programmer.', 'a Flutter Programmer.','a IT Student.', 'a Passionate Student.'], 'text',[]);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
