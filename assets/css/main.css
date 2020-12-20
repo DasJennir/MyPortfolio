@@ -422,6 +422,18 @@ li {
       "nav-wrapper"
       "left-column"
       "right-column";
+
+
+      
+  }
+
+  
+  #button {
+    background: var(--buttonHover);
+    margin-top: -1px;
+    animation: none;
+    padding: 5px;
+    margin-top: 10px;
   }
   .card {
     position: relative;
@@ -455,12 +467,12 @@ li {
   }
 
   .preview:hover {
+    border: 0px solid black;
     transition: 1s ease-in-out;
-    transform: scale(1.1);
+    transform: scale(1.0);
+    width: 250px;
     background-color: var(--buttonMain);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    width: 300px;
+   
   }
 }
 
