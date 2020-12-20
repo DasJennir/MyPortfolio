@@ -51,32 +51,7 @@ function consoleText(words, id, colors) {
 }
 
 
-//slideshow
-var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-  
-// Apply to all slideshows that you define with the markup wrote
-slideshows.forEach(initSlideShow);
 
-function initSlideShow(slideshow) {
-
-  var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
-
-  var index = 0, time = 2000;
-  slides[index].classList.add('active');  
-  
-  setInterval( () => {
-    slides[index].classList.remove('active');
-    
-    //Go over each slide incrementing the index
-    index++;
-    
-    // If you go over all slides, restart the index to show the first slide and start again
-    if (index === slides.length) index = 0; 
-    
-    slides[index].classList.add('active');
-
-  }, time);
-}
 
 // change color
 
@@ -101,23 +76,23 @@ for (var i=0; themeDots.length > i; i++){
 
 function setTheme(mode){
 	if(mode == 'light'){
-		document.getElementById('theme-style').href = 'assets/css/main.css'
+		document.getElementById('theme-style').href = 'main.css'
 	}
 
 	if(mode == 'green'){
-		document.getElementById('theme-style').href = 'assets/css/green.css'
+		document.getElementById('theme-style').href = 'green.css'
 	}
 
 	if(mode == 'solar'){
-		document.getElementById('theme-style').href = 'assets/css/solar.css'
+		document.getElementById('theme-style').href = 'solar.css'
 	}
 
 	if(mode == 'dark'){
-		document.getElementById('theme-style').href = 'assets/css/dark.css'
+		document.getElementById('theme-style').href = 'dark.css'
   }
   
   if(mode == 'red'){
-		document.getElementById('theme-style').href = 'assets/css/red.css'
+		document.getElementById('theme-style').href = 'red.css'
 	}
 
 	localStorage.setItem('theme', mode)
