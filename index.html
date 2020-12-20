@@ -50,19 +50,24 @@
           </ul>
           <div class="dots-wrapper">
             <div id="dot5" class="browser-square">
-             <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/"> <i class="fa fa-search" aria-hidden="true"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/"> <i class="fa fa-search"
+                  aria-hidden="true"></i></a>
             </div>
             <div id="dot4" class="browser-square">
-              <a target="_blank" href="https://github.com/indiafoxtrot"><i class="fa fa-list" aria-hidden="true"></i></a>
+              <a target="_blank" href="https://github.com/indiafoxtrot"><i class="fa fa-list"
+                  aria-hidden="true"></i></a>
             </div>
             <div id="dot3" class="browser-dot">
-              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/">  <i class="fa fa-window-minimize" aria-hidden="true"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/"> <i class="fa fa-window-minimize"
+                  aria-hidden="true"></i></a>
             </div>
             <div id="dot2" class="browser-dot">
-              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/">  <i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/"> <i class="fa fa-window-maximize"
+                  aria-hidden="true"></i></a>
             </div>
             <div id="dot1" class="browser-dot">
-              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/">  <i class="fa fa-times" aria-hidden="true"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/istvan-feher/"> <i class="fa fa-times"
+                  aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -88,7 +93,7 @@
               </div>
 
             </div>
-            <button onclick="location.href='#projects'" id="button">Projects</button>
+            <a href="#projects"><button id="button">Projects</button></a>
 
           </div>
         </div>
@@ -120,32 +125,30 @@
 
           <h4>More about me</h4>
 
-          <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+          <p>Hardworking and reliable IT student with strong ability in Webdev and Cybersecurity.Offering cloud, network
+            and web security. Highly organized, proactive and punctual with team-oriented mentality.</p>
 
-          <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that
-            interest me.</p>
+          <p style="font-style: italic;">*Improve, Adapt, and Overcome these are the key words that I use to do my all
+            projects</p>
 
           <hr>
           <h4>Skills</h4>
           <p>Fullstack developer with primary expertise on Django + Flutter. (<a target="_blank"
-              href="./resume.pdf">Download Resume</a>)</p>
+              href="./resume.pdf"><b>Download Resume</b></a>)</p>
           <div id="skills">
             <ul>
               <li>Python</li>
               <li>Django</li>
               <li>Flutter</li>
               <li>HTML/CSS/JS</li>
+            </ul>
+            <ul>
+              <li>Pentesting</li>
+              <li>Cybersecurity</li>
               <li>Networking</li>
               <li>
                 Bug Bounty Hunter</li>
-              <li>Python</li>
-            </ul>
-            <ul>
               <li>Photoshop</li>
-              <li>Pentesting</li>
-              <li>Cybersecurity</li>
-
-
             </ul>
 
 
@@ -168,7 +171,7 @@
 
   </section>
 
-  <section  id='projects' class="s1">
+  <section id='projects' class="s1">
     <div class="main-container">
       <div class="main-container">
         <h3 style="text-align:center;">My FullStack Projects</h3>
@@ -239,10 +242,39 @@
     </div>
   </section>
 
-  <footer class="footer">That is a open source resume feel free to copy and modify it as you wish.</footer>
+  <footer class="footer">That is a open source resume feel free to copy and modify it as you prefer.</footer>
   <div class="background-color">.</div>
 </body>
 
 <script src="./assets/js/animation.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+   // Add smooth scrolling to all links
+$(document).ready(function(){
+
+  $("a").on('click', function(event) {
+
+    
+    if (this.hash !== "") {
+    
+      event.preventDefault();
+
+    
+      var hash = this.hash;
+
+   
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+   
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
 
 </html>
