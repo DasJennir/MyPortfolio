@@ -617,8 +617,9 @@ li {
 }
 
 .button-social:hover {
-  transition: 0.3s ease-in-out;
-  background-color: var(--buttonHover);
+ 
+  background-color: rgb(23, 177, 197);
+  transition: 0.1s ease-in-out;
 }
 
 @media screen and (max-width: 850px) {
